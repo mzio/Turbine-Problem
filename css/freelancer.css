@@ -10,6 +10,7 @@ body {
 
 p {
     font-size: 20px;
+    font-family: "DIN Alternate",Roboto,Arial,sans-serif;
 }
 
 p.small {
@@ -32,8 +33,12 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "DIN Alternate",Roboto,sans-serif;
     font-weight: 700;
+}
+
+hr.light {
+    border-color: #fff;
 }
 
 hr.star-light,
@@ -80,22 +85,17 @@ hr.star-primary:after {
 }
 
 header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
     text-align: center;
     color: #fff;
     background: #ff0000;
-    position: relative;
-    height: 100%;
-    width: 100%;
 }
 
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
-}
-
-header img {
-    display: block;
-    margin: 0 auto 20px;
 }
 
 header .intro-text .name {
@@ -104,72 +104,71 @@ header .intro-text .name {
     font-family: Exo,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 600;
+    top: 50%;
 }
 
-header .intro-text .skills1 {
-    font-family: Exo, Helvetica, Arial, sans-serif;
+header .intro-text .header-text {
+    font-family: 'DIN Alternate', Helvetica, Arial, sans-serif;
     font-size: 1.25em;
     font-weight: 400;
 }
 
-header .intro-text .skills2 {
-    font-family: Exo, Helvetica, Arial, sans-serif;
-    font-size: 1em;
-    font-weight: 300;
-}
-
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     header .intro-text .name {
         font-size: 4.75em;
     }
 
-    header .intro-text .skills {
+    header .intro-text .header-text {
         font-size: 1.75em;
     }
 }
 /* Navigation Bar */
 .navbar-default {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'DIN Alternate', 'Roboto', sans-serif;
     background-color: #fff;
-    border-color: transparent;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    padding: 20px;
+
 }
 
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'DIN Alternate', 'Roboto', sans-serif;
+    font-size: 20px;
     font-weight: 400;
     color: #222;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #007FFF;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 400;
     color: #222;
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #007FFF;
+    color: #808080;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #007FFF!important;
+    color: #808080!important;
     background-color: transparent;
 }
 
@@ -194,7 +193,7 @@ header .intro-text .skills2 {
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,0.75);
+        color: rgba(255,255,255,0.9);
     }
 
     .navbar-default .nav > li>a:hover,
@@ -203,18 +202,20 @@ header .intro-text .skills2 {
     }
 
     .navbar-default.affix {
-        background-color: #fff;
-        border-bottom-color:#007FFF;
+        background-color: rgba(255,255,255,0.95);
+        border-style: solid;
+        border-bottom-color:#222;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 20px;
-        color: #007FFF;
+        color: #222;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #007FFF;
+        color: #808080;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -224,60 +225,10 @@ header .intro-text .skills2 {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #007FFF;
+        color: #808080;
     }
 }
 
-/*
-@media(min-width:768px) {
-    .navbar-fixed-top {
-        padding: 25px 0;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-        background-color: #fff;
-    }
-
-    .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
-
-    .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
-    }
-
-    .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
-}
-
-.navbar {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    background-color: transparent;
-}
-
-.navbar a:focus {
-    outline: 0;
-}
-
-.navbar .navbar-nav {
-    letter-spacing: 1px;
-}
-
-.navbar .navbar-nav li a:focus {
-    outline: 0;
-}
-
-.navbar-default,
-.navbar-inverse {
-    border: 0;
-}
-*/
 section {
     padding: 100px 0;
 }
@@ -298,7 +249,6 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #2c3e50;
 }
 
 @media(max-width:767px) {
@@ -371,7 +321,9 @@ section.success a.active {
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
+    font-family: "DIN Alternate", Roboto, Arial, sans-serif;
     font-size: 20px;
+    text-transform: uppercase;
     color: #fff;
     background: 0 0;
     transition: all .3s ease-in-out;
