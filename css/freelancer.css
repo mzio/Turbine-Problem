@@ -82,7 +82,10 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #ff0000;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 header .container {
@@ -98,13 +101,20 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Exo,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
 }
 
-header .intro-text .skills {
+header .intro-text .skills1 {
+    font-family: Exo, Helvetica, Arial, sans-serif;
     font-size: 1.25em;
+    font-weight: 400;
+}
+
+header .intro-text .skills2 {
+    font-family: Exo, Helvetica, Arial, sans-serif;
+    font-size: 1em;
     font-weight: 300;
 }
 
@@ -122,13 +132,110 @@ header .intro-text .skills {
         font-size: 1.75em;
     }
 }
+/* Navigation Bar */
+.navbar-default {
+    font-family: 'Roboto',sans-serif;
+    background-color: #fff;
+    border-color: transparent;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
 
+.navbar-default .navbar-header .navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    color: #222;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #007FFF;
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    color: #222;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: #007FFF;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #007FFF!important;
+    background-color: transparent;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-header .navbar-brand {
+        color: rgba(255,255,255,.9);
+    }
+
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: #fff;
+    }
+
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255,255,255,0.75);
+    }
+
+    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: #fff;
+    }
+
+    .navbar-default.affix {
+        background-color: #fff;
+        border-bottom-color:#007FFF;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 20px;
+        color: #007FFF;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #007FFF;
+    }
+
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #222;
+    }
+
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: #007FFF;
+    }
+}
+
+/*
 @media(min-width:768px) {
     .navbar-fixed-top {
         padding: 25px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
+        background-color: #fff;
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -151,6 +258,7 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    background-color: transparent;
 }
 
 .navbar a:focus {
@@ -169,7 +277,7 @@ header .intro-text .skills {
 .navbar-inverse {
     border: 0;
 }
-
+*/
 section {
     padding: 100px 0;
 }
