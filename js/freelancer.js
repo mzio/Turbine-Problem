@@ -32,6 +32,13 @@ $('body').scrollspy({
     offset: 51
 })
 
+// Offset for Main Navigation
+$('#mainNav').affix({
+    offset: {
+        top: 100
+    }
+})
+
 // Floating label headings for the contact form
 $(function() {
     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
