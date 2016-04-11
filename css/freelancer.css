@@ -90,7 +90,23 @@ header {
     width: 100%;
     text-align: center;
     color: #fff;
-    background: #ff0000;
+    /*background: transparent;*/
+    z-index: 100;
+}
+
+header .background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+}
+
+header .bg-shade {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -50;
 }
 
 header .container {
@@ -136,7 +152,7 @@ header .intro-text .header-text {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
-    padding: 20px;
+    padding: 15px;
 
 }
 
