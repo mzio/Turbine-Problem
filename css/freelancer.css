@@ -524,6 +524,9 @@ footer .footer-below {
     margin: 30px 0;
 }
 
+.portfolio-modal .modal-body {
+    text-align: left
+}
 .portfolio-modal .close-modal {
     position: absolute;
     top: 25px;
