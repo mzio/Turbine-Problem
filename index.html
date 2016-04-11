@@ -78,7 +78,7 @@
                         <div style="height: 1em"></div>
                         <div class="col-lg-8 col-lg-offset-2 text-center">
                             <a href="#about" class="btn btn-lg btn-outline page-scroll">
-                                Continue Below <i class="fa fa-arrow-right"></i>
+                                Continue Below <i class="fa fa-chevron-right"></i>
                             </a>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                 <div style="height: 20px"></div>
                 <div class="col-lg-8 col-lg-offset-2 text-center" style="transform: translateY(40%);">
                     <a href="#portfolio" class="btn btn-lg btn-outline btn-w page-scroll">
-                        Continue Below <i class="fa fa-arrow-right"></i>
+                        Continue Below <i class="fa fa-chevron-right"></i>
                     </a>
                 </div>
             </div>
@@ -252,10 +252,36 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>QUESTION ONE</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/Q1.1.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <h2><i class="fa fa-chevron-right"></i> QUESTION ONE</h2>
+                            <hr class="light">
+                            <!--<img src="img/portfolio/Q1.1.png" class="img-responsive img-centered" alt="">-->
+                            <p>
+                                Considering that all three turbines are being used, we determine the flow $Q_T$ to each turbine
+                                that will give the maximum total energy production. Our limitations are that the flows much sum
+                                to the total incoming flow and the given domain restrictions must be observed. Consequently,
+                                we use Lagrange multipliers to find the values for the individual flows (as functions of $Q_T$)
+                                that maximize the total energy $KW_1 + KW_2 + KW_3$ subject to the constraints $Q_1 + Q_2 + Q_3 = Q_T$
+                                and the domain restrictions on each $Q_i$.
+                            </p>
+                            <p>
+                                Using Lagrange, we set the partial derivative of each $KW$ equation with respect to $Q_1$,
+                                $Q_2$, and $Q_3$ respectively, equal to the partial of $Q_1 + Q_2 + Q_3 = Q_T$.
+                                $$Q_1 = [0.1277 - (8.16 \cdot 10-5)Q_1](170 – 1.6 \cdot 10^{-6}Q_T^2) = \lambda$$
+                                $$Q_2 = [0.1358 - (9.38 \cdot 10-5)Q_2](170 – 1.6 \cdot 10^{-6}Q_T^2) = \lambda$$
+                                $$Q_3 = [0.1380 - (7.68 \cdot 10-5)Q_3](170 – 1.6 \cdot 10^{-6}Q_T^2) = \lambda$$
+                            </p>
+                            <p>
+                                Because each partial is equal to lambda, it is possible to set each partial equal to each other.
+                                By doing this, we can solve $Q_2$ and $Q_3$ in terms of $Q_1$.
+                                $$Q_2 = 86.354 + 0.8699Q_1$$
+                                $$Q_3 = 134.115 + 1.0625Q_1$$
+                                Then we can substitute back into the original constraint equation in order to find $Q1$ in
+                                terms of $Q_T$. By plugging this value of $Q_1$ into the two equations above we can then determine
+                                $Q_2$ and $Q_3$ in terms of $Q_T$.
+                                $$Q_1 = 0.341Q_T - 75.134$$
+                                $$Q_2 = 0.297Q_T + 20.995$$
+                                $$Q_3 = 0.362Q_T + 54.285$$
+                            </p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
@@ -270,7 +296,7 @@
                                     </strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-w" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -289,8 +315,8 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>QUESTION TWO</h2>
-                            <hr class="star-primary">
+                            <h2><i class="fa fa-chevron-right"></i> QUESTION TWO</h2>
+                            <hr class="light">
                             <img src="img/portfolio/Q2.1.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
@@ -326,8 +352,8 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>QUESTION THREE</h2>
-                            <hr class="star-primary">
+                            <h2><i class="fa fa-chevron-right"></i> QUESTION THREE</h2>
+                            <hr class="light">
                             <img src="img/portfolio/Q3.1.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
@@ -363,8 +389,8 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>QUESTION FOUR</h2>
-                            <hr class="star-primary">
+                            <h2><i class="fa fa-chevron-right"></i> QUESTION FOUR</h2>
+                            <hr class="light">
                             <img src="img/portfolio/Q4.1.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
@@ -400,8 +426,8 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>QUESTION FIVE</h2>
-                            <hr class="star-primary">
+                            <h2><i class="fa fa-chevron-right"></i> QUESTION FIVE</h2>
+                            <hr class="light">
                             <img src="img/portfolio/Q5.1.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
@@ -437,8 +463,8 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>QUESTION SIX</h2>
-                            <hr class="star-primary">
+                            <h2><i class="fa fa-chevron-right"></i> QUESTION SIX</h2>
+                            <hr class="light">
                             <img src="img/portfolio/Q6.1.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
