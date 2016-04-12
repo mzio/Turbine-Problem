@@ -373,6 +373,7 @@ section.portfolio h2 {
 .btn-w {
     border-color: #061728;
     color: #061728;
+    font-family: "DIN Alternate", Roboto, sans-serif;
     background: transparent;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
