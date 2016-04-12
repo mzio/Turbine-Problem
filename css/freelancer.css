@@ -179,12 +179,12 @@ header .intro-text .header-text {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #808080;
+    color: #496a80;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #808080!important;
+    color: #496a80!important;
     background-color: transparent;
 }
 
@@ -231,7 +231,7 @@ header .intro-text .header-text {
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #808080;
+        color: #496a80;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -241,7 +241,7 @@ header .intro-text .header-text {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #808080;
+        color: #496a80;
     }
 }
 
@@ -366,7 +366,7 @@ section.portfolio h2 {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #808080;
+    color: #496a80;
     background: #fff;
 }
 
@@ -380,9 +380,9 @@ section.portfolio h2 {
     transition: all .35s;
 }
 .btn-w:hover {
-    border-color: #808080;
+    border-color: #496a80;
     color: #fff;
-    background-color: #808080;
+    background-color: #496a80;
 }
 
 .floating-label-form-group {
